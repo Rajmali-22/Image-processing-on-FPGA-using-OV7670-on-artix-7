@@ -2,6 +2,7 @@
 
   module camera_interface(
 	input wire clk,clk_100,rst_n,
+	input wire sw_v_mirror, sw_h_mirror, // Added for mirroring control
 	input wire[3:0] key, //key[1:0] for brightness control , key[3:2] for contrast control
 	//asyn_fifo IO
 	input wire rd_en,
@@ -44,6 +45,7 @@
 	 reg[7:0] data_q,data_d;
 	 reg[7:0] brightness_q,brightness_d;
 	 reg[7:0] contrast_q,contrast_d;
+	 reg[7:0] mvfp_q, mvfp_d; // Register for mirror/flip control
 	 reg start,stop;
 	 reg[7:0] wr_data;
 	 wire rd_tick;
@@ -167,6 +169,7 @@
 			data_q<=0;
 			brightness_q<=0;
 			contrast_q<=0;
+			mvfp_q<=8'h23; // Initial MVFP value
 		end
 		else begin
 			state_q<=state_d;
@@ -187,6 +190,7 @@
 			data_q<=data_d;
 			brightness_q<=brightness_d;
 			contrast_q<=contrast_d;
+			mvfp_q<=mvfp_d;
 		end
 	 end
 	 	 
@@ -210,6 +214,7 @@
 		data_d=data_q;
 		brightness_d=brightness_q;
 		contrast_d=contrast_q;
+		mvfp_d=mvfp_q;
 		
 		//delay logic  
 		if(start_delay_q) delay_d=delay_q+1'b1;
@@ -296,9 +301,19 @@
 							data_d=0;
 							brightness_d=8'h00; 
 							contrast_d=8'h40;
+							mvfp_d=8'h23; // Default (Mirror Bit 5=1, Flip Bit 4=0)
 						  end
 			sccb_idle: if(state==0) begin //wait for any pushbutton
-								if(key0_tick) begin//increase brightness
+								if(mvfp_q[5] != sw_h_mirror || mvfp_q[4] != sw_v_mirror) begin
+									mvfp_d = {mvfp_q[7:6], sw_h_mirror, sw_v_mirror, mvfp_q[3:0]};
+									start=1;
+									wr_data=8'h42;
+									addr_d=8'h1E; // MVFP register
+									data_d=mvfp_d;
+									sccb_state_d=sccb_address;
+									led_d=0;
+								end
+								else if(key0_tick) begin//increase brightness
 									brightness_d=(brightness_q[7]==1)? brightness_q-1:brightness_q+1;
 									if(brightness_q==8'h80) brightness_d=0;
 									start=1;

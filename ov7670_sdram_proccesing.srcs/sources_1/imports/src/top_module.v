@@ -6,6 +6,9 @@
 	input wire sw_invert,    // Switch T7
 	input wire sw_threshold, // Switch N6
 	input wire sw_sobel,     // Switch R8
+	input wire sw_v_mirror,  // Switch P4
+	input wire sw_h_mirror,  // Switch T8
+	input wire sw_gaussian,  // Switch P1
 	input wire[3:0] key, //key[1:0] for brightness control , key[3:2] for contrast control
 	//camera pinouts
 	input wire cmos_pclk,cmos_href,cmos_vsync,
@@ -45,6 +48,8 @@
 		.clk(clk),
 		.clk_100(clk_sdram),
 		.rst_n(rst_n),
+		.sw_v_mirror(sw_v_mirror),
+		.sw_h_mirror(sw_h_mirror),
 		.key(key),
 		//asyn_fifo IO
 		.rd_en(f2s_data_valid),
@@ -96,6 +101,8 @@
 		.sw_invert(sw_invert),
 		.sw_threshold(sw_threshold),
 		.sw_sobel(sw_sobel),
+		.sw_h_mirror(sw_h_mirror),
+		.sw_gaussian(sw_gaussian),
 		.rd_en(rd_en),
 		.pixel_in(din),
 		.pixel_out(processed_din)

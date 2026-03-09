@@ -134,3 +134,13 @@ set_property IOSTANDARD LVCMOS33 [get_ports sw_threshold]
 # Sobel Edge Detection Switch
 set_property PACKAGE_PIN R8 [get_ports sw_sobel]
 set_property IOSTANDARD LVCMOS33 [get_ports sw_sobel]
+
+# Mirroring and Gaussian Switches
+set_property PACKAGE_PIN T8 [get_ports sw_h_mirror]
+set_property IOSTANDARD LVCMOS33 [get_ports sw_h_mirror]
+
+set_property PACKAGE_PIN P4 [get_ports sw_v_mirror]
+set_property IOSTANDARD LVCMOS33 [get_ports sw_v_mirror]
+
+set_property PACKAGE_PIN P1 [get_ports sw_gaussian]
+set_property IOSTANDARD LVCMOS33 [get_ports sw_gaussian]

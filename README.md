@@ -12,6 +12,9 @@ This project implements real-time image processing on an Artix-7 FPGA using an O
   - **Color Inversion**: Creates a negative effect by inverting RGB565 bits (Switch T7).
   - **Binary Thresholding**: High-contrast black and white output based on a 128-intensity threshold (Switch N6).
   - **Sobel Edge Detection**: Real-time edge detection using 3x3 convolution kernels (Switch R8).
+  - **Horizontal Mirroring**: Reverses the video horizontally (Switch T8).
+  - **Vertical Mirroring**: Flips the video vertically via camera register control (Switch P4).
+  - **Gaussian Filter**: Smooths the RGB video using a 3x3 Gaussian kernel (Switch P1).
 
 ## Controls
 
@@ -20,6 +23,9 @@ This project implements real-time image processing on an Artix-7 FPGA using an O
 | **Switch R8** | Sobel Edge Detection | R8 |
 | **Switch N6** | Thresholding Mode | N6 |
 | **Switch T7** | Color Inversion Mode | T7 |
+| **Switch T8** | Horizontal Mirror | T8 |
+| **Switch P4** | Vertical Mirror | P4 |
+| **Switch P1** | Gaussian Filter | P1 |
 | **Switch P8** | Grayscale Mode | P8 |
 | **Key[1:0]**  | Brightness Control | K13, L13 |
 | **Key[3:2]**  | Contrast Control | L14, M12 |

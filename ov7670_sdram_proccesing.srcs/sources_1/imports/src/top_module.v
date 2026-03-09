@@ -5,6 +5,7 @@
 	input wire sw_grayscale, // Switch P8
 	input wire sw_invert,    // Switch T7
 	input wire sw_threshold, // Switch N6
+	input wire sw_sobel,     // Switch R8
 	input wire[3:0] key, //key[1:0] for brightness control , key[3:2] for contrast control
 	//camera pinouts
 	input wire cmos_pclk,cmos_href,cmos_vsync,
@@ -94,6 +95,8 @@
 		.sw_grayscale(sw_grayscale),
 		.sw_invert(sw_invert),
 		.sw_threshold(sw_threshold),
+		.sw_sobel(sw_sobel),
+		.rd_en(rd_en),
 		.pixel_in(din),
 		.pixel_out(processed_din)
 	 );

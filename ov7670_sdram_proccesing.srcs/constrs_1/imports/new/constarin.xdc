@@ -130,3 +130,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports sw_invert]
 # Thresholding Switch
 set_property PACKAGE_PIN N6 [get_ports sw_threshold]
 set_property IOSTANDARD LVCMOS33 [get_ports sw_threshold]
+
+# Sobel Edge Detection Switch
+set_property PACKAGE_PIN R8 [get_ports sw_sobel]
+set_property IOSTANDARD LVCMOS33 [get_ports sw_sobel]

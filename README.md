@@ -11,14 +11,16 @@ This project implements real-time image processing on an Artix-7 FPGA using an O
   - **Grayscale Conversion**: Converts color video to black and white (Switch P8).
   - **Color Inversion**: Creates a negative effect by inverting RGB565 bits (Switch T7).
   - **Binary Thresholding**: High-contrast black and white output based on a 128-intensity threshold (Switch N6).
+  - **Sobel Edge Detection**: Real-time edge detection using 3x3 convolution kernels (Switch R8).
 
 ## Controls
 
 | Control | Function | Pin |
 |---------|----------|-----|
-| **Switch P8** | Grayscale Mode | P8 |
-| **Switch T7** | Color Inversion Mode | T7 |
+| **Switch R8** | Sobel Edge Detection | R8 |
 | **Switch N6** | Thresholding Mode | N6 |
+| **Switch T7** | Color Inversion Mode | T7 |
+| **Switch P8** | Grayscale Mode | P8 |
 | **Key[1:0]**  | Brightness Control | K13, L13 |
 | **Key[3:2]**  | Contrast Control | L14, M12 |
 | **Rst_n**     | System Reset | M6 |

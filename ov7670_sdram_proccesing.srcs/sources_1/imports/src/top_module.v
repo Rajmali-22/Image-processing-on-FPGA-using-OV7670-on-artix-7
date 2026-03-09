@@ -2,7 +2,9 @@
 
    module top_module(
 	input wire clk,rst_n,
-	input wire sw_grayscale, // Added for grayscale control (Switch P8)
+	input wire sw_grayscale, // Switch P8
+	input wire sw_invert,    // Switch T7
+	input wire sw_threshold, // Switch N6
 	input wire[3:0] key, //key[1:0] for brightness control , key[3:2] for contrast control
 	//camera pinouts
 	input wire cmos_pclk,cmos_href,cmos_vsync,
@@ -90,6 +92,8 @@
 		.clk(clk_vga),
 		.rst_n(rst_n),
 		.sw_grayscale(sw_grayscale),
+		.sw_invert(sw_invert),
+		.sw_threshold(sw_threshold),
 		.pixel_in(din),
 		.pixel_out(processed_din)
 	 );

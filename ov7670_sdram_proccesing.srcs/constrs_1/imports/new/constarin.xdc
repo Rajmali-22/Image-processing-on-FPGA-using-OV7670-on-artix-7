@@ -122,3 +122,11 @@ set_property IOSTANDARD LVCMOS33 [get_ports {vga_out_r[4]}]
 # Grayscale Toggle Switch
 set_property PACKAGE_PIN P8 [get_ports sw_grayscale]
 set_property IOSTANDARD LVCMOS33 [get_ports sw_grayscale]
+
+# Color Inversion Switch
+set_property PACKAGE_PIN T7 [get_ports sw_invert]
+set_property IOSTANDARD LVCMOS33 [get_ports sw_invert]
+
+# Thresholding Switch
+set_property PACKAGE_PIN N6 [get_ports sw_threshold]
+set_property IOSTANDARD LVCMOS33 [get_ports sw_threshold]

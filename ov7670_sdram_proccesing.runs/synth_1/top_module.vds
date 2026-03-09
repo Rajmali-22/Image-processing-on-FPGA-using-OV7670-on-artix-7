@@ -1,0 +1,552 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Mar  9 16:56:26 2026
+# Process ID         : 36500
+# Current directory  : C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.runs/synth_1
+# Command line       : vivado.exe -log top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
+# Log file           : C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.runs/synth_1/top_module.vds
+# Journal file       : C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.runs/synth_1\vivado.jou
+# Running On         : Stoic
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12500H
+# CPU Frequency      : 3110 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 16
+# Host memory        : 16846 MB
+# Swap memory        : 25168 MB
+# Total Virtual      : 42015 MB
+# Available Virtual  : 9247 MB
+#-----------------------------------------------------------
+source top_module.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/utils_1/imports/synth_1/top_module.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/utils_1/imports/synth_1/top_module.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_module -part xc7a35tftg256-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 29232
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1029.766 ; gain = 469.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'LOCKED', assumed default net type 'wire' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/camera_interface.v:390]
+INFO: [Synth 8-11241] undeclared symbol 'clkin1', assumed default net type 'wire' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/dcm_165MHz.v:80]
+INFO: [Synth 8-11241] undeclared symbol 'clkin1', assumed default net type 'wire' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/dcm_24MHz.v:80]
+INFO: [Synth 8-11241] undeclared symbol 'clkin1', assumed default net type 'wire' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/dcm_25MHz.v:80]
+INFO: [Synth 8-11241] undeclared symbol 'clk_out', assumed default net type 'wire' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/vga_interface.v:69]
+INFO: [Synth 8-11241] undeclared symbol 'LOCKED', assumed default net type 'wire' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/vga_interface.v:84]
+INFO: [Synth 8-11241] undeclared symbol 'LOCKED', assumed default net type 'wire' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/top_module.v:140]
+INFO: [Synth 8-6157] synthesizing module 'top_module' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/top_module.v:3]
+INFO: [Synth 8-6157] synthesizing module 'camera_interface' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/camera_interface.v:3]
+INFO: [Synth 8-6157] synthesizing module 'i2c_top' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/i2c_top.v:3]
+	Parameter freq bound to: 100000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'i2c_top' (0#1) [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/i2c_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dcm_24MHz' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/dcm_24MHz.v:67]
+INFO: [Synth 8-6157] synthesizing module 'DCM_SP' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:35555]
+	Parameter CLKDV_DIVIDE bound to: 2.000000 - type: double 
+	Parameter CLKFX_DIVIDE bound to: 25 - type: integer 
+	Parameter CLKFX_MULTIPLY bound to: 12 - type: integer 
+	Parameter CLKIN_DIVIDE_BY_2 bound to: FALSE - type: string 
+	Parameter CLKIN_PERIOD bound to: 20.000000 - type: double 
+	Parameter CLKOUT_PHASE_SHIFT bound to: NONE - type: string 
+	Parameter CLK_FEEDBACK bound to: 1X - type: string 
+	Parameter DESKEW_ADJUST bound to: SYSTEM_SYNCHRONOUS - type: string 
+	Parameter PHASE_SHIFT bound to: 0 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'DCM_SP' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:35555]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2676]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2676]
+INFO: [Synth 8-6155] done synthesizing module 'dcm_24MHz' (0#1) [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/dcm_24MHz.v:67]
+INFO: [Synth 8-6157] synthesizing module 'asyn_fifo' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/asyn_fifo.v:3]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter FIFO_DEPTH_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dual_port_sync' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/asyn_fifo.v:142]
+	Parameter ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dual_port_sync' (0#1) [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/asyn_fifo.v:142]
+INFO: [Synth 8-6155] done synthesizing module 'asyn_fifo' (0#1) [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/asyn_fifo.v:3]
+WARNING: [Synth 8-7071] port 'data_count_w' of module 'asyn_fifo' is unconnected for instance 'm2' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/camera_interface.v:407]
+WARNING: [Synth 8-7023] instance 'm2' of module 'asyn_fifo' has 11 connections declared, but only 10 given [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/camera_interface.v:407]
+INFO: [Synth 8-6157] synthesizing module 'debounce_explicit' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/debounce_explicit.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/debounce_explicit.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'debounce_explicit' (0#1) [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/debounce_explicit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'camera_interface' (0#1) [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/camera_interface.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sdram_interface' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/sdram_interface.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/sdram_interface.v:60]
+INFO: [Synth 8-6157] synthesizing module 'sdram_controller' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/sdram_controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ODDR2' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:103098]
+	Parameter DDR_ALIGNMENT bound to: NONE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR2' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:103098]
+INFO: [Synth 8-6155] done synthesizing module 'sdram_controller' (0#1) [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/sdram_controller.v:3]
+WARNING: [Synth 8-7071] port 'data_count_r' of module 'asyn_fifo' is unconnected for instance 'm2' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/sdram_interface.v:113]
+WARNING: [Synth 8-7023] instance 'm2' of module 'asyn_fifo' has 11 connections declared, but only 10 given [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/sdram_interface.v:113]
+INFO: [Synth 8-6155] done synthesizing module 'sdram_interface' (0#1) [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/sdram_interface.v:3]
+WARNING: [Synth 8-7071] port 'sdram_clk' of module 'sdram_interface' is unconnected for instance 'm1' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/top_module.v:64]
+WARNING: [Synth 8-7023] instance 'm1' of module 'sdram_interface' has 19 connections declared, but only 18 given [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/top_module.v:64]
+INFO: [Synth 8-6157] synthesizing module 'image_processing' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/image_processing.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing' (0#1) [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/image_processing.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vga_interface' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/vga_interface.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vga_core' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/vga_core.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vga_core' (0#1) [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/vga_core.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dcm_25MHz' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/dcm_25MHz.v:67]
+INFO: [Synth 8-6157] synthesizing module 'DCM_SP__parameterized0' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:35555]
+	Parameter CLKDV_DIVIDE bound to: 2.000000 - type: double 
+	Parameter CLKFX_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKFX_MULTIPLY bound to: 4 - type: integer 
+	Parameter CLKIN_DIVIDE_BY_2 bound to: FALSE - type: string 
+	Parameter CLKIN_PERIOD bound to: 20.000000 - type: double 
+	Parameter CLKOUT_PHASE_SHIFT bound to: NONE - type: string 
+	Parameter CLK_FEEDBACK bound to: 1X - type: string 
+	Parameter DESKEW_ADJUST bound to: SYSTEM_SYNCHRONOUS - type: string 
+	Parameter PHASE_SHIFT bound to: 0 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'DCM_SP__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:35555]
+INFO: [Synth 8-6155] done synthesizing module 'dcm_25MHz' (0#1) [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/dcm_25MHz.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'vga_interface' (0#1) [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/vga_interface.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dcm_165MHz' [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/dcm_165MHz.v:67]
+INFO: [Synth 8-6157] synthesizing module 'DCM_SP__parameterized1' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:35555]
+	Parameter CLKDV_DIVIDE bound to: 2.000000 - type: double 
+	Parameter CLKFX_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKFX_MULTIPLY bound to: 3 - type: integer 
+	Parameter CLKIN_DIVIDE_BY_2 bound to: FALSE - type: string 
+	Parameter CLKIN_PERIOD bound to: 20.000000 - type: double 
+	Parameter CLKOUT_PHASE_SHIFT bound to: NONE - type: string 
+	Parameter CLK_FEEDBACK bound to: 1X - type: string 
+	Parameter DESKEW_ADJUST bound to: SYSTEM_SYNCHRONOUS - type: string 
+	Parameter PHASE_SHIFT bound to: 0 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'DCM_SP__parameterized1' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:35555]
+INFO: [Synth 8-6155] done synthesizing module 'dcm_165MHz' (0#1) [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/dcm_165MHz.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (0#1) [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/top_module.v:3]
+WARNING: [Synth 8-6014] Unused sequential element w_ptr_sync_reg was removed.  [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/asyn_fifo.v:102]
+WARNING: [Synth 8-7137] Register r_ptr_sync_reg in module asyn_fifo has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/asyn_fifo.v:71]
+WARNING: [Synth 8-7137] Register data_count_w_reg in module asyn_fifo has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/asyn_fifo.v:72]
+WARNING: [Synth 8-7137] Register data_count_r_reg in module asyn_fifo has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/asyn_fifo.v:103]
+WARNING: [Synth 8-7137] Register pclk_1_reg in module camera_interface has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/camera_interface.v:177]
+WARNING: [Synth 8-7137] Register pclk_2_reg in module camera_interface has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/camera_interface.v:178]
+WARNING: [Synth 8-7137] Register href_1_reg in module camera_interface has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/camera_interface.v:179]
+WARNING: [Synth 8-7137] Register href_2_reg in module camera_interface has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/camera_interface.v:180]
+WARNING: [Synth 8-7137] Register vsync_1_reg in module camera_interface has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/camera_interface.v:181]
+WARNING: [Synth 8-7137] Register vsync_2_reg in module camera_interface has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/camera_interface.v:182]
+WARNING: [Synth 8-6014] Unused sequential element s_dq_q_reg was removed.  [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/sources_1/imports/src/sdram_controller.v:137]
+WARNING: [Synth 8-7129] Port din[11] in module vga_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[6] in module vga_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[5] in module vga_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module vga_interface is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1147.297 ; gain = 586.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1147.297 ; gain = 586.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1147.297 ; gain = 586.875
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1147.297 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+WARNING: [Netlist 29-151] Pin 'C1' on instance 'm1/m0/oddr2_primitive' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'C10' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C1' on instance 'oddr2_primitive' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'C10' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-365] DCM_ADV instance 'm0/m1/dcm_sp_inst' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+WARNING: [Netlist 29-365] DCM_ADV instance 'm0/m1/dcm_sp_inst' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+WARNING: [Netlist 29-365] DCM_ADV instance 'm2/m1/dcm_sp_inst' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+WARNING: [Netlist 29-365] DCM_ADV instance 'm2/m1/dcm_sp_inst' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+WARNING: [Netlist 29-365] DCM_ADV instance 'm3/dcm_sp_inst' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+WARNING: [Netlist 29-365] DCM_ADV instance 'm3/dcm_sp_inst' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/constrs_1/imports/new/constarin.xdc]
+WARNING: [Vivado 12-584] No ports matched 'vga_out_r[4]'. [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/constrs_1/imports/new/constarin.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/constrs_1/imports/new/constarin.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/constrs_1/imports/new/constarin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.srcs/constrs_1/imports/new/constarin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1235.500 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  DCM_SP => MMCME2_ADV: 3 instances
+  ODDR2 => ODDR: 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1235.500 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1235.500 ; gain = 675.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1235.500 ; gain = 675.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1235.500 ; gain = 675.078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_q_reg' in module 'i2c_top'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'debounce_explicit'
+INFO: [Synth 8-802] inferred FSM for state register 'state_q_reg' in module 'camera_interface'
+INFO: [Synth 8-802] inferred FSM for state register 'sccb_state_q_reg' in module 'camera_interface'
+INFO: [Synth 8-802] inferred FSM for state register 'state_q_reg' in module 'vga_interface'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0110 |                             0000
+                starting |                             0100 |                             0001
+                  packet |                             0101 |                             0010
+             ack_servant |                             0000 |                             0011
+                    read |                             0010 |                             0101
+              ack_master |                             1000 |                             0110
+                  stop_1 |                             0001 |                             0111
+                  stop_2 |                             0111 |                             1000
+              renew_data |                             0011 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_q_reg' using encoding 'sequential' in module 'i2c_top'
+WARNING: [Synth 8-6430] The Block RAM "dual_port_sync:/ram_reg" may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                  delay0 |                               01 |                               01
+                     one |                               10 |                               10
+                  delay1 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'debounce_explicit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+              start_sccb |                             0001 |                             0001
+           write_address |                             0010 |                             0010
+              write_data |                             0011 |                             0011
+             digest_loop |                             0100 |                             0100
+                   delay |                             0101 |                             0101
+             vsync_fedge |                             0110 |                             0110
+                   byte1 |                             0111 |                             0111
+                   byte2 |                             1000 |                             1000
+              fifo_write |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_q_reg' using encoding 'sequential' in module 'camera_interface'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               wait_init |                              000 |                              000
+               sccb_idle |                              001 |                              001
+            sccb_address |                              010 |                              010
+               sccb_data |                              011 |                              011
+               sccb_stop |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sccb_state_q_reg' using encoding 'sequential' in module 'camera_interface'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   delay |                              001 |                               00
+                    idle |                              010 |                               01
+                 display |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_q_reg' using encoding 'one-hot' in module 'vga_interface'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1235.500 ; gain = 675.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   28 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   15 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 9     
+	   3 Input   10 Bit       Adders := 4     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 6     
+	   2 Input    4 Bit       Adders := 1     
++---XORs : 
+	   2 Input     11 Bit         XORs := 8     
++---XORs : 
+	               11 Bit    Wide XORs := 20    
++---Registers : 
+	               28 Bit    Registers := 1     
+	               16 Bit    Registers := 5     
+	               15 Bit    Registers := 3     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 15    
+	               10 Bit    Registers := 7     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 7     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 22    
++---RAMs : 
+	              16K Bit	(1024 X 16 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   28 Bit        Muxes := 2     
+	  10 Input   16 Bit        Muxes := 2     
+	  13 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   15 Bit        Muxes := 6     
+	  13 Input   13 Bit        Muxes := 2     
+	   2 Input   13 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 4     
+	  13 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 17    
+	   9 Input    8 Bit        Muxes := 1     
+	  10 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 5     
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 21    
+	   9 Input    4 Bit        Muxes := 3     
+	  10 Input    4 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 1     
+	  13 Input    4 Bit        Muxes := 3     
+	   3 Input    4 Bit        Muxes := 5     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 9     
+	   9 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 4     
+	  13 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 62    
+	   9 Input    1 Bit        Muxes := 8     
+	   4 Input    1 Bit        Muxes := 16    
+	  10 Input    1 Bit        Muxes := 8     
+	   5 Input    1 Bit        Muxes := 7     
+	  13 Input    1 Bit        Muxes := 15    
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port din[11] in module vga_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[6] in module vga_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[5] in module vga_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module vga_interface is either unconnected or has no load
+RAM Pipeline Warning: Read Address Register Found For RAM m0/m2/m0/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM m0/m2/m0/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM m0/m2/m0/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+WARNING: [Synth 8-6430] The Block RAM "top_module/m0/m2/m0/ram_reg" may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+RAM Pipeline Warning: Read Address Register Found For RAM m1/m2/m0/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM m1/m2/m0/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM m1/m2/m0/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+WARNING: [Synth 8-6430] The Block RAM "top_module/m1/m2/m0/ram_reg" may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+RAM Pipeline Warning: Read Address Register Found For RAM m0/m2/m0/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM m1/m2/m0/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1235.859 ; gain = 675.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-----------------+------------+---------------+----------------+
+|Module Name      | RTL Object | Depth x Width | Implemented As | 
++-----------------+------------+---------------+----------------+
+|camera_interface | message    | 128x16        | LUT            | 
+|camera_interface | p_0_out    | 128x16        | LUT            | 
++-----------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|top_module  | m0/m2/m0/ram_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|top_module  | m1/m2/m0/ram_reg | 1 K x 16(NO_CHANGE)    | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1337.117 ; gain = 776.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1338.305 ; gain = 777.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|top_module  | m0/m2/m0/ram_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|top_module  | m1/m2/m0/ram_reg | 1 K x 16(NO_CHANGE)    | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance m0/m2/m0/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance m1/m2/m0/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1359.172 ; gain = 798.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1561.258 ; gain = 1000.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1561.258 ; gain = 1000.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1561.258 ; gain = 1000.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1561.258 ; gain = 1000.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1562.277 ; gain = 1001.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1562.277 ; gain = 1001.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     6|
+|2     |CARRY4   |    91|
+|3     |DCM_SP   |     3|
+|4     |LUT1     |    26|
+|5     |LUT2     |   249|
+|6     |LUT3     |    90|
+|7     |LUT4     |   227|
+|8     |LUT5     |   144|
+|9     |LUT6     |   233|
+|10    |MUXF7    |    17|
+|11    |MUXF8    |     6|
+|12    |ODDR2    |     2|
+|13    |RAMB18E1 |     2|
+|15    |FDCE     |   435|
+|16    |FDPE     |    10|
+|17    |FDRE     |   123|
+|18    |IBUF     |    18|
+|19    |IOBUF    |    17|
+|20    |OBUF     |    45|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1562.277 ; gain = 1001.855
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 1562.277 ; gain = 913.652
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1562.277 ; gain = 1001.855
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1562.277 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 138 Unisim elements for replacement
+WARNING: [Netlist 29-151] Pin 'C1' on instance 'm1/m0/oddr2_primitive' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'C10' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C1' on instance 'oddr2_primitive' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'C10' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-365] DCM_ADV instance 'm0/m1/dcm_sp_inst' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+WARNING: [Netlist 29-365] DCM_ADV instance 'm0/m1/dcm_sp_inst' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+WARNING: [Netlist 29-365] DCM_ADV instance 'm2/m1/dcm_sp_inst' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+WARNING: [Netlist 29-365] DCM_ADV instance 'm2/m1/dcm_sp_inst' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+WARNING: [Netlist 29-365] DCM_ADV instance 'm3/dcm_sp_inst' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+WARNING: [Netlist 29-365] DCM_ADV instance 'm3/dcm_sp_inst' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1562.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 22 instances were transformed.
+  DCM_SP => MMCME2_ADV: 3 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 17 instances
+  ODDR2 => ODDR: 2 instances
+
+Synth Design complete | Checksum: 3e6dae09
+INFO: [Common 17-83] Releasing license: Synthesis
+82 Infos, 46 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1562.277 ; gain = 1191.125
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1562.277 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/rajma/Desktop/verilog/ova7670/ov7670_sdram_proccesing/ov7670_sdram_proccesing.runs/synth_1/top_module.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  9 16:57:19 2026...

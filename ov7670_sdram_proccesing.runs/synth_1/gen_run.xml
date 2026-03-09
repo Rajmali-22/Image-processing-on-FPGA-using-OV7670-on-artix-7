@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1773055581" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top_module.dcp">
+  <File Type="PA-TCL" Name="top_module.tcl"/>
+  <File Type="REPORTS-TCL" Name="top_module_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top_module.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_module_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="top_module_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_module_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top_module.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_module_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_module_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/asyn_fifo.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../angelo/main_ov7670_src/sources_1/imports/src/asyn_fifo.v"/>
+        <Attr Name="ImportTime" Val="1773042563"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/camera_interface.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../angelo/main_ov7670_src/sources_1/imports/src/camera_interface.v"/>
+        <Attr Name="ImportTime" Val="1773050531"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/dcm_165MHz.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../angelo/main_ov7670_src/sources_1/imports/src/dcm_165MHz.v"/>
+        <Attr Name="ImportTime" Val="1773042563"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/dcm_24MHz.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../angelo/main_ov7670_src/sources_1/imports/src/dcm_24MHz.v"/>
+        <Attr Name="ImportTime" Val="1773042563"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/dcm_25MHz.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../angelo/main_ov7670_src/sources_1/imports/src/dcm_25MHz.v"/>
+        <Attr Name="ImportTime" Val="1773042563"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/debounce_explicit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../angelo/main_ov7670_src/sources_1/imports/src/debounce_explicit.v"/>
+        <Attr Name="ImportTime" Val="1773042563"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/i2c_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../angelo/main_ov7670_src/sources_1/imports/src/i2c_top.v"/>
+        <Attr Name="ImportTime" Val="1773042563"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/image_processing.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sdram_controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../angelo/main_ov7670_src/sources_1/imports/src/sdram_controller.v"/>
+        <Attr Name="ImportTime" Val="1773042563"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sdram_interface.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../angelo/main_ov7670_src/sources_1/imports/src/sdram_interface.v"/>
+        <Attr Name="ImportTime" Val="1773042563"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/vga_core.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../angelo/main_ov7670_src/sources_1/imports/src/vga_core.v"/>
+        <Attr Name="ImportTime" Val="1773042563"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/vga_interface.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../angelo/main_ov7670_src/sources_1/imports/src/vga_interface.v"/>
+        <Attr Name="ImportTime" Val="1773050474"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/top_module.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../angelo/main_ov7670_src/sources_1/imports/src/top_module.v"/>
+        <Attr Name="ImportTime" Val="1773050548"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top_module"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/new/constarin.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../angelo/main_ov7670_src/constrs_1/new/constarin.xdc"/>
+        <Attr Name="ImportTime" Val="1773046757"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/top_module.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

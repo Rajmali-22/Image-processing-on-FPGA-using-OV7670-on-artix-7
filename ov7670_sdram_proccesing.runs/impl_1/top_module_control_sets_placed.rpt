@@ -1,0 +1,114 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Mar  9 16:58:02 2026
+| Host         : Stoic running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_module_control_sets_placed.rpt
+| Design       : top_module
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    36 |
+|    Minimum number of control sets                        |    36 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   102 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    36 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     7 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     3 |
+| >= 16              |    14 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              88 |           21 |
+| No           | No                    | Yes                    |              96 |           43 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              35 |           10 |
+| Yes          | No                    | Yes                    |             351 |          114 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |                Enable Signal                | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+---------------------------------------------+------------------+------------------+----------------+--------------+
+|  m3/clk_sdram  | m1/m0/s_addr_q[10]_i_1_n_0                  | m0/m0/rst_n      |                1 |              1 |         1.00 |
+|  m3/clk_sdram  | m1/m0/nxt_q[3]_i_1_n_0                      | m0/m0/rst_n      |                1 |              4 |         4.00 |
+|  m3/clk_sdram  | m1/m0/state_q[3]_i_1_n_0                    | m0/m0/rst_n      |                1 |              4 |         4.00 |
+|  m3/clk_sdram  | m0/m3/E[0]                                  | m0/m0/rst_n      |                2 |              4 |         2.00 |
+|  m3/clk_sdram  | m0/m0/FSM_sequential_state_q_reg[2]_0[0]    | m0/m0/rst_n      |                2 |              4 |         2.00 |
+|  m3/clk_sdram  | m0/m0/idx_d                                 | m0/m0/rst_n      |                2 |              4 |         2.00 |
+|  m3/clk_sdram  | m0/m0/FSM_sequential_state_q[3]_i_1_n_0     | m0/m0/rst_n      |                3 |              4 |         1.33 |
+|  m3/clk_sdram  | m1/m0/state_q_reg[0]_0                      | m0/m0/rst_n      |                2 |              7 |         3.50 |
+|  m3/clk_sdram  | m0/m0/message_index_d                       | m0/m0/rst_n      |                3 |              8 |         2.67 |
+|  m2/m1/clk_out | m1/m2/r_ptr_q[8]_i_1_n_0                    | m0/m0/rst_n      |                3 |              8 |         2.67 |
+|  m3/clk_sdram  | m0/m0/E[0]                                  | m0/m0/rst_n      |                5 |              8 |         1.60 |
+|  m3/clk_sdram  | m0/m0/FSM_sequential_sccb_state_q_reg[0][0] | m0/m0/rst_n      |                5 |              8 |         1.60 |
+|  m3/clk_sdram  | m0/pixel_d[15]                              | m0/m0/rst_n      |                1 |              8 |         8.00 |
+|  m3/clk_sdram  | m0/pixel_d[7]                               | m0/m0/rst_n      |                1 |              8 |         8.00 |
+|  m3/clk_sdram  | m0/m0/wr_data_d                             | m0/m0/rst_n      |                5 |              9 |         1.80 |
+|  m3/clk_sdram  | m1/m0/burst_index_q[9]_i_1_n_0              | m0/m0/rst_n      |                3 |             10 |         3.33 |
+|  m3/clk_sdram  | m0/m2/m0/E[0]                               | m0/m0/rst_n      |                4 |             11 |         2.75 |
+|  m3/clk_sdram  | m1/m0/s2f_data_valid_q_reg_0[0]             | m0/m0/rst_n      |                5 |             11 |         2.20 |
+|  m3/clk_sdram  | m0/m3/FSM_sequential_sccb_state_q_reg[0][0] | m0/m0/rst_n      |                5 |             11 |         2.20 |
+|  m3/clk_sdram  | m1/m0/s_addr_q[12]_i_1_n_0                  | m0/m0/rst_n      |                4 |             14 |         3.50 |
+|  m3/clk_sdram  | m0/m2/E[0]                                  | m0/m0/rst_n      |                3 |             15 |         5.00 |
+|  m3/clk_sdram  | m1/m0/state_q_reg[0]_2[0]                   | m0/m0/rst_n      |                4 |             15 |         3.75 |
+|  m3/clk_sdram  | m1/m0/delay_ctr_q[15]_i_1_n_0               | m0/m0/rst_n      |                5 |             16 |         3.20 |
+|  m3/clk_sdram  | m1/m0/rw_en_d                               | m0/m0/rst_n      |                6 |             16 |         2.67 |
+|  m3/clk_sdram  | m1/m0/s2f_data_q[15]_i_1_n_0                | m0/m0/rst_n      |                4 |             16 |         4.00 |
+|  m3/clk_sdram  | m1/m0/f2s_data_q[15]_i_1_n_0                | m0/m0/rst_n      |                5 |             16 |         3.20 |
+|  m3/clk_sdram  | m0/m4/timer_reg[0]_i_1__0_n_0               | m0/m0/rst_n      |                6 |             21 |         3.50 |
+|  m3/clk_sdram  | m0/m5/timer_reg[0]_i_1__1_n_0               | m0/m0/rst_n      |                6 |             21 |         3.50 |
+|  m3/clk_sdram  | m0/m3/timer_reg[0]_i_1_n_0                  | m0/m0/rst_n      |                6 |             21 |         3.50 |
+|  m3/clk_sdram  | m0/m6/timer_reg[0]_i_1__2_n_0               | m0/m0/rst_n      |                6 |             21 |         3.50 |
+|  m2/m1/clk_out |                                             |                  |                4 |             22 |         5.50 |
+|  m3/clk_sdram  | m0/delay_q[26]_i_1_n_0                      | m0/m0/rst_n      |                5 |             27 |         5.40 |
+|  m3/clk_sdram  | rst_n_IBUF                                  |                  |               10 |             35 |         3.50 |
+|  m2/m1/clk_out |                                             | m0/m0/rst_n      |               16 |             45 |         2.81 |
+|  m3/clk_sdram  |                                             | m0/m0/rst_n      |               27 |             51 |         1.89 |
+|  m3/clk_sdram  |                                             |                  |               17 |             66 |         3.88 |
++----------------+---------------------------------------------+------------------+------------------+----------------+--------------+
+
+
